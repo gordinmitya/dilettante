@@ -1,0 +1,15 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+    implementation project(":domain")
+
+    // https://github.com/rubenlagus/TelegramBots
+    implementation "org.telegram:telegrambots:5.2.0"
+    implementation "org.slf4j:slf4j-jdk14:1.7.28"
+
+    // https://insert-koin.io
+    implementation "io.insert-koin:koin-core:3.1.0"
+    testImplementation "io.insert-koin:koin-test:3.1.0"
+}
